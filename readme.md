@@ -1,8 +1,3 @@
-Here is a clean, professional **README.md** for your **Signova** project.
-If you want, I can also format it with badges, screenshots, or add installation instructions.
-
----
-
 # **Signova – Sign Language to Text Converter**
 
 Signova is an AI-powered sign language reader designed to convert **ASL (American Sign Language) hand signs** into **text**.
