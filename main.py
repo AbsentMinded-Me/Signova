@@ -2,8 +2,18 @@ from fastapi import FastAPI, UploadFile
 from transformers import pipeline
 from PIL import Image
 import io
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],   
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 
 # Load the model using pipeline
 clf = pipeline(
